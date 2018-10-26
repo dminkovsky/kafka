@@ -72,7 +72,7 @@ public interface Transformer<K, V, R> {
      * If more than one output record should be forwarded downstream {@link ProcessorContext#forward(Object, Object)},
      * {@link ProcessorContext#forward(Object, Object, int)}, and
      * {@link ProcessorContext#forward(Object, Object, String)} can be used.
-     * If not record should be forwarded downstream, {@code transform} can return {@code null}.
+     * If no record should be forwarded downstream, {@code transform} can return {@code null}.
      *
      * @param key the key for the record
      * @param value the value for the record
